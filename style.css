@@ -1,0 +1,52 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url('./imagens/fundo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    margin: 10px 5vw;
+
+}
+
+header #imgPrincipal {
+    display: flex;
+    width: 25vw;
+    height: 20vw;
+    background-image: url('./imagens/contruindo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+#chamada {
+    margin: auto 0px auto auto;
+    font-size: 2.5vw;
+    font-family: 'Oxygen', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+main {
+    width: 80vw;
+    margin: auto;
+}
+
+main #textoPrincipal {
+    width: 45vw;
+    margin-top: 5vw;
+    font-family: 'Oxygen', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(81, 81, 175);
+}
+
+
+
+
+
