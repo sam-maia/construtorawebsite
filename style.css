@@ -5,7 +5,7 @@
 
 body {
     background-image: url('./imagens/fundo.jpg');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -53,13 +53,18 @@ header #imgPrincipal {
 }
 
 main {
-    width: 80vw;
+    width: 85vw;
     margin: auto;
 }
 
+#part1 {
+    display: flex;
+    margin-top: 10vw;
+}
+
 main #textoPrincipal {
-    width: 40vw;
-    margin-top: 5vw;
+    width: 25vw;
+    margin-bottom: 5vw;
     font-family: "Work Sans",sans-serif;
     font-weight: bold;
     line-height: 1.5rem;
@@ -67,6 +72,36 @@ main #textoPrincipal {
 }
 
 #oqueE {
+    margin-bottom: 30px;
+}
+
+#imgFim {
+    width: auto;
+    height: 15vw;
+}
+
+#part2 {
+    display: flex;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+#imgCriando {
+    width: 40vw;
+    height: auto;
+}
+
+
+#texto2 {
+    width: 25vw;
+    margin-left: 10vw;
+    font-family: "Work Sans",sans-serif;
+    font-weight: bold;
+    line-height: 1.5rem;
+    color: rgb(81, 81, 175);
+}
+
+#naoPerca {
     margin-bottom: 30px;
 }
 
