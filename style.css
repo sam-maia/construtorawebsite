@@ -3,22 +3,16 @@
     padding: 0px;
 }
 
-body {
-    background-image: url('./imagens/fundo.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
 header {
     display: flex;
-    margin: 40px 5vw;
-
+    justify-content: space-between;
 }
 
-header #imgPrincipal {
+#imgLogo {
     display: flex;
-    width: 25vw;
-    height: 20vw;
+    width: 40vw;
+    height: 25vw;
+    margin: auto;
     background-image: url('./imagens/contruindo.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -26,28 +20,42 @@ header #imgPrincipal {
 }
 
 #chamada {
-    margin: auto 0px auto auto;
-    font-size: 2.5vw;
-    font-family: "Work Sans",sans-serif;
+    width: 55vw;
+    height: 30vw;
+    background-image: url('./imagens/fundo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Poppins,Avenir,Avenir Next,Futura,helvetica,arial,sans-serif;
     font-weight: bold;
     color: white;
+    text-shadow: 2px 2px 0px rgb(0 0 0 / 27%);
+}
+
+#titulo {
+    font-size: 2vw;
+    margin: 15% 0% 3% 20%;
+}
+
+#itens {
+    margin: 5% 0% 1% 30%;
+    font-size: 2vw;
+    text-decoration: underline;
 }
 
 #detalhes {
-    margin-top: 30px;
-    margin-left: 10vw;
+    margin: 1% 0% 1% 30%;
     font-size: 2vw;
     line-height: 3vw;
 }
 
-#titu {
-    text-decoration: underline;
-}
-
 #botao {
-    width: 20vw;
-    margin-top: 30px;
-    text-align: center;
+    display: flex;
+    width: 15vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    margin: 1% 0% 1% 40%;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
     background-color: rgb(112, 112, 112);
 }
@@ -55,16 +63,18 @@ header #imgPrincipal {
 main {
     width: 85vw;
     margin: auto;
+
 }
 
 #part1 {
     display: flex;
-    margin-top: 10vw;
+    margin: 3vw auto;
+    justify-content: space-between;
 }
 
 main #textoPrincipal {
-    width: 25vw;
-    margin-bottom: 5vw;
+    width: 30vw;
+    margin: auto;
     font-family: "Work Sans",sans-serif;
     font-weight: bold;
     line-height: 1.5rem;
@@ -77,24 +87,26 @@ main #textoPrincipal {
 
 #imgFim {
     width: auto;
-    height: 15vw;
+    height: 20vw;
+    margin: auto;
 }
 
 #part2 {
     display: flex;
-    margin-top: 5vw;
-    margin-bottom: 5vw;
+    margin: 3vw auto;
+    justify-content: space-between;
 }
 
 #imgCriando {
     width: 40vw;
     height: auto;
+    margin: auto;
 }
 
 
 #texto2 {
-    width: 25vw;
-    margin-left: 10vw;
+    width: 30vw;
+    margin: auto;
     font-family: "Work Sans",sans-serif;
     font-weight: bold;
     line-height: 1.5rem;
@@ -103,6 +115,14 @@ main #textoPrincipal {
 
 #naoPerca {
     margin-bottom: 30px;
+}
+
+footer {
+    width: 100%;
+    height: 10vw;
+    background-image: url('./imagens/rodape.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
