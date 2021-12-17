@@ -60,6 +60,15 @@ header {
     background-color: rgb(112, 112, 112);
 }
 
+#botao a {
+    text-decoration: none;
+    color: white;
+}
+
+#botao:hover {
+    background-color: red;
+}
+
 main {
     width: 85vw;
     margin: auto;
@@ -115,6 +124,34 @@ main #textoPrincipal {
 
 #naoPerca {
     margin-bottom: 30px;
+}
+
+@media (max-width: 700px) {
+    #part1 {
+        display: block;
+    }
+
+    main #textoPrincipal {
+        width: 70vw;
+    }
+
+    #imgFim {
+        display: flex;
+        margin: 10vw auto;
+    }
+
+    #part2 {
+        display: block;
+    }
+
+    #imgCriando {
+        display: flex;
+        margin: 10vw auto;
+    }
+
+    #texto2 {
+        width: 70vw;
+    }
 }
 
 footer {
