@@ -39,13 +39,16 @@ header {
 #itens {
     margin: 5% 0% 1% 30%;
     font-size: 2vw;
-    text-decoration: underline;
 }
 
 #detalhes {
     margin: 1% 0% 1% 30%;
     font-size: 2vw;
     line-height: 3vw;
+}
+
+ul {
+    list-style-type: '\2714\00A0\00A0';
 }
 
 #botao {
@@ -57,7 +60,7 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    background-color: rgb(112, 112, 112);
+    background-color: rgba(236, 46, 46, 0.829);
 }
 
 #botao a {
@@ -126,7 +129,12 @@ main #textoPrincipal {
     margin-bottom: 30px;
 }
 
-@media (max-width: 800px) {
+
+@media screen and (max-width: 700px) {
+
+    header {
+        display: flex;
+    }
 
 
     #imgLogo {
@@ -188,6 +196,23 @@ main #textoPrincipal {
         width: 80vw;
     }
 }
+
+#whatsapp {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    bottom: 40px;
+    right: 20px;
+    border-radius: 50px;
+    align-items: center;
+    box-sizing: 1px 1px 2px #888;
+    background-image: url('./imagens/whatsapp.png');
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
 
 footer {
     width: 100%;
