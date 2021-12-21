@@ -48,7 +48,6 @@ header {
 #detalhes {
     margin: 2% 10%;
     font-size: 2vw;
-    line-height: 3vw;
 }
 
 ul {
@@ -159,7 +158,7 @@ main #textoPrincipal {
 
     #chamada {
         width: 100vw;
-        height: 45vw;
+        height: 60vw;
         border-bottom-right-radius: 0px;
         overflow: hidden;
     }
@@ -177,14 +176,15 @@ main #textoPrincipal {
     }
 
     #detalhes {
-        font-size: 3vw;
+        font-size: 4vw;
+        height: 20vw;
     }
     
     #botao {
-        width: 25vw;
-        height: 4vw;
-        font-size: 2.5vw;
-        margin: 3% 40%;
+        width: 30vw;
+        height: 6vw;
+        font-size: 3vw;
+        margin: 3% auto;
     }
 
     #imgLogo {
