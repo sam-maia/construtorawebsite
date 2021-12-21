@@ -9,10 +9,8 @@ header {
 }
 
 #imgLogo {
-    display: flex;
-    width: 40vw;
-    height: 25vw;
-    margin: auto;
+    width: 45vw;
+    height: 30vw;
     background-image: url('./imagens/contruindo.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -20,11 +18,10 @@ header {
 }
 
 #chamada {
-    width: 55vw;
+    width: 50vw;
     height: 30vw;
-    background-image: url('./imagens/fundo.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: rgb(35, 90, 180);
+    border-bottom-right-radius: 200px;
     font-family: Poppins,Avenir,Avenir Next,Futura,helvetica,arial,sans-serif;
     font-weight: bold;
     color: white;
@@ -32,17 +29,24 @@ header {
 }
 
 #titulo {
+    display: flex;
+    align-items: center;
     font-size: 2vw;
-    margin: 15% 0% 3% 20%;
+    margin: 5% 5%;
+}
+
+#valor {
+    margin: 0 0 0 5%;
+    font-size: 3.5vw;
 }
 
 #itens {
-    margin: 5% 0% 1% 30%;
+    margin: 5% 20%;
     font-size: 2vw;
 }
 
 #detalhes {
-    margin: 1% 0% 1% 30%;
+    margin: 2% 20%;
     font-size: 2vw;
     line-height: 3vw;
 }
@@ -56,7 +60,7 @@ ul {
     width: 15vw;
     height: 3vw;
     font-size: 1.5vw;
-    margin: 1% 0% 1% 40%;
+    margin: 5% 25%;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
@@ -78,11 +82,38 @@ main {
 
 }
 
+#inicio {
+    display: flex;
+    margin: 4vw 0vw;
+    justify-content: space-between;
+    font-family: "Work Sans",sans-serif;
+    font-weight: bold;
+    line-height: 1.5rem;
+    color: rgb(81, 81, 175);
+}
+
+#oqueE {
+    width: 30vw;
+    margin: auto;
+    font-size: 2vw;
+}
+
+#abertura {
+    width: 50vw;
+}
+
 #part1 {
     display: flex;
-    margin: 3vw auto;
+    margin: 4vw auto;
     justify-content: space-between;
 }
+
+#imgFim {
+    width: auto;
+    height: 20vw;
+    margin: auto;
+}
+
 
 main #textoPrincipal {
     width: 30vw;
@@ -93,15 +124,6 @@ main #textoPrincipal {
     color: rgb(81, 81, 175);
 }
 
-#oqueE {
-    margin-bottom: 30px;
-}
-
-#imgFim {
-    width: auto;
-    height: 20vw;
-    margin: auto;
-}
 
 #part2 {
     display: flex;
@@ -109,12 +131,9 @@ main #textoPrincipal {
     justify-content: space-between;
 }
 
-#imgCriando {
-    width: 40vw;
-    height: auto;
-    margin: auto;
+#naoPerca {
+    margin-bottom: 30px;
 }
-
 
 #texto2 {
     width: 30vw;
@@ -125,41 +144,39 @@ main #textoPrincipal {
     color: rgb(81, 81, 175);
 }
 
-#naoPerca {
-    margin-bottom: 30px;
+#imgCriando {
+    width: auto;
+    height: 15vw;
+    margin: auto;
 }
 
 
 @media screen and (max-width: 700px) {
 
     header {
-        display: flex;
-    }
-
-
-    #imgLogo {
-        width: 25vw;
-        height: 20vw;
-        margin: auto 0% auto auto;
+        display: block;
     }
 
     #chamada {
-        width: 70vw;
-        height: 40vw;  
+        width: 100vw;
+        height: 45vw;
+        border-bottom-right-radius: 0px;
+        overflow: hidden;
     }
 
     #titulo {
-        font-size: 3.5vw;
-        margin: 15% 1% 1% 15%;
+        font-size: 4vw;
+    }
+
+    #valor {
+        font-size: 5vw;
     }
 
     #itens {
-        margin: 5% 0% 1% 20%;
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     #detalhes {
-        margin: 1% 0% 1% 20%;
         font-size: 3vw;
     }
     
@@ -170,12 +187,34 @@ main #textoPrincipal {
         margin: 3% 40%;
     }
 
+    #imgLogo {
+        margin: 5% auto;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    #inicio {
+        display: block;
+    }
+
+    #oqueE {
+        width: 100%;
+        margin: 3vw auto;
+        font-size: 4vw;
+    }
+
+    #abertura {
+        width: 100%;
+        font-size: 4vw;
+    }
+
     #part1 {
         display: block;
     }
 
     main #textoPrincipal {
         width: 80vw;
+        font-size: 4vw;
     }
 
     #imgFim {
@@ -185,6 +224,7 @@ main #textoPrincipal {
 
     #part2 {
         display: block;
+        font-size: 4vw;
     }
 
     #imgCriando {
@@ -205,7 +245,6 @@ main #textoPrincipal {
     right: 20px;
     border-radius: 50px;
     align-items: center;
-    box-sizing: 1px 1px 2px #888;
     background-image: url('./imagens/whatsapp.png');
     background-size: 70px 70px;
     background-repeat: no-repeat;
