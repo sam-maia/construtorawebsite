@@ -1,252 +1,186 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
 
 * {
-    margin: 0px;
-    padding: 0px;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-}
-
-#chamada {
-    width: 50vw;
-    height: 30vw;
-    background-color: rgb(35, 90, 180);
-    border-bottom-right-radius: 200px;
-    filter: drop-shadow(2px 2px 10px rgb(0, 0, 0, .6));
-    font-size: 3vw;
-    font-family: Raleway, sans-serif;
-    font-weight: bold;
-    color: white;
-    text-shadow: 4px 2px 0px rgb(0 0 0 / 27%);
-}
-
-#textoChamada {
-    width: 80%;
-    margin: 5% auto;
-}
-
-#botao {
-    display: flex;
-    width: 20vw;
-    height: 4vw;
-    font-size: 2vw;
-    margin: 5% 25%;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    background-color: rgba(236, 46, 46, 0.829);
-}
-
-#botao:hover {
-    box-shadow: 2px 2px 20px rgb(0, 0, 0, .6);
-    background-color: red;
-}
-
-#botao a {
+    margin: 0;
+    padding: 0;
     text-decoration: none;
-    color: white;
 }
 
-#imgLogo {
-    width: 45vw;
-    height: 30vw;
-    background-image: url('./imagens/contruindo.png');
-    background-size: contain;
-    background-repeat: no-repeat;
+html {
+    scroll-behavior: smooth;
+}
 
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, rgb(22, 43, 122) 16.62%, rgb(82, 113, 214) 85.61%);
+}
+
+.cabacalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.logo {
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.menu {
+    display: flex;
+    gap: 32px;
+}
+
+.menu-item {
+    color: white;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 main {
-    width: 80vw;
-    margin: auto;
-    line-height: 2rem;
-    font-family: Raleway, sans-serif;
-    font-size: 2vw;
-    color: rgb(81, 81, 175);
+    border-top: 0.1px solid white;
+    padding: 20px 0px;
 }
 
-#inicio {
+.conteudo-principal {
     display: flex;
-    margin: 4vw 0vw;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin: 25px 50px;
 }
 
-#titulo1 {
-    width: 40vw;
-    margin: auto;
-    margin-left: 0;
-    font-size: 2.5vw;
-}
-
-#texto1 {
-    width: 45vw;
-}
-
-#part1 {
+.texto-principal {
     display: flex;
-    margin: 4vw auto;
-    justify-content: space-between;
-}
-
-#img1 {
-    width: auto;
-    height: 20vw;
-    margin: auto;
-    margin-left: 0;
-}
-
-
-#texto2 {
-    width: 40vw;
-    margin: auto;
-}
-
-
-#part2 {
-    display: flex;
-    margin: 4vw auto;
-    justify-content: space-between;
-}
-
-#texto3 {
-    width: 40vw;
-    margin: auto;
-}
-
-ul {
-    list-style-type: '\2714\00A0\00A0';
-}
-
-#img2 {
-    width: auto;
-    height: 20vw;
-    margin-right: 5%;
-}
-
-
-@media screen and (max-width: 700px) {
-
-    header {
-        display: block;
-    }
-
-    #chamada {
-        width: 100vw;
-        height: 60vw;
-        border-bottom-right-radius: 0px;
-        overflow: hidden;
-    }
-
-    #titulo {
-        font-size: 4vw;
-    }
-
-    #valor {
-        font-size: 5vw;
-    }
-
-    #itens {
-        font-size: 4vw;
-    }
-
-    #detalhes {
-        font-size: 4vw;
-        height: 20vw;
-    }
-    
-    #botao {
-        width: 30vw;
-        height: 6vw;
-        font-size: 3vw;
-        margin: 3% auto;
-    }
-
-    #imgLogo {
-        margin: 5% auto;
-        background-color: white;
-        border-radius: 20px;
-    }
-
-    #inicio {
-        display: block;
-    }
-
-    #oqueE {
-        width: 100%;
-        margin: 3vw auto;
-        font-size: 4vw;
-    }
-
-    #abertura {
-        width: 100%;
-        font-size: 4vw;
-    }
-
-    #part1 {
-        display: block;
-    }
-
-    main #textoPrincipal {
-        width: 80vw;
-        font-size: 4vw;
-    }
-
-    #imgFim {
-        display: flex;
-        margin: 10vw auto;
-    }
-
-    #part2 {
-        display: block;
-        font-size: 4vw;
-    }
-
-    #imgCriando {
-        display: flex;
-        margin: 10vw auto;
-    }
-
-    #texto2 {
-        width: 80vw;
-    }
-}
-
-#whatsapp {
-    position: fixed;
-    width: 100px;
-    height: 100px;
-    bottom: 40px;
-    right: 20px;
-    border-radius: 50px;
+    flex-direction: column;
     align-items: center;
-    background-image: url('./imagens/whatsapp.png');
-    background-size: 70px 70px;
-    background-repeat: no-repeat;
-    background-position: center;
+    gap: 32px;
 }
 
-
-
-footer {
-    display: flex;
-    width: 100%;
-    height: 30vw;
-    align-items: center;
-    background-image: url('./imagens/rodape.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#formaPagamento {
-    width: 70vw;
-    margin: auto;
+.texto-principal h1 {
+    width: 500px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 64px;
     color: white;
 }
 
+.texto-principal h2{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+}
 
+button {
+    background-color: rgb(191, 203, 255);
+    width: 150px;
+    height: 50px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+button:hover {
+    background-color: rgb(8, 8, 43);
+    color: white;
+}
+
+.conteudo-principal img {
+    height: 350px;
+    margin-top: 50px;
+}
+
+.conteudo-secundario {
+    display: block;
+    margin: 80px 0px;
+}
+
+.conteudo-secundario h3 {
+    display: flex;
+    width: 350px;
+    margin: 50px auto;
+    justify-content: center;
+    border-top: 0.1px solid white;
+    padding-top: 50px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+}
+
+.conteiner1 {
+    display: flex;
+    flex-direction: column 2;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.resultados {
+    width: 500px;
+}
+
+.conteiner1 p {
+    width: 500px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+}
+
+.conteiner2 {
+    display: flex;
+    flex-direction: column 2;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.conteiner2 p {
+    width: 500px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+}
+
+.criando{
+    width: 500px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 32px 150px;
+    align-items: center;
+    background-color: white;
+}
+
+ul{
+    font-family: 'Sarala', sans-serif;
+    color: rgb(22, 43, 122);
+    list-style-type: '\2714\00A0\00A0';
+}
+
+.botao-rodape {
+    background-color: rgb(191, 203, 255);
+    width: 180px;
+    height: 50px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.whatsapp {
+    position: fixed;
+    height: 60px;
+    right: 90px;
+    bottom: 60px;
+}

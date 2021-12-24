@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,78 +7,74 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <title>Contrutora Web Site</title>
+    <title>Construtora Website</title>
 </head>
-
 <body>
+    <header class="cabacalho">
+       <img class="logo" src="./imagens/logo.png" alt="Logo Construtora Website">
 
-    <header>
-
-        <div id="chamada">
-
-            <div id="textoChamada">
-                Capture mais clientes, eleve sua empresa ao proximo nivel. <br><br>
-                Crie já sua landing page!
-            </div>
-
-            <div id="botao"><a href="https://wa.me/554898592292" target="_blank">COMECE AGORA</a></div> 
-
-        </div>
-
-        <div id="imgLogo"></div>
+        <nav class="menu">
+            <a class="menu-item" href="#oQueE">O'que é uma landing page?</a>
+            <a class="menu-item" href="https://wa.me/554898592292" target="_blank">Templates</a>
+            <a class="menu-item" href="#forma-pagamento">Forma de pagamento</a>
+        </nav>
 
     </header>
 
     <main>
+        <section class="conteudo-principal">
 
-        <div id="inicio">
-            <div id="titulo1">O'que é uma landing page?</div>
-            
-            <div id="texto1">Landing Page é uma página que possui todos os elementos voltados à conversão 
-            do visitante em oportunidade ou cliente.</div> 
-
-        </div>
-
-        <div id="part1">
-
-            <img id="img1" src="./imagens/fim.png" alt="">
-
-            <div id="texto2">
-                Também conhecidas como páginas de conversão, as Landing Pages são muito usadas em campanhas 
-                de Marketing Digital, pois tem altas taxas de conversão.
+            <div class="texto-principal">
+                <h1>Capture mais clientes, eleve sua empresa ao proximo nivel.</h1>
+                <h2>Solicite já sua landing page!</h2>
+                <a href="https://wa.me/554898592292" target="_blank"><button>Solicitar</button></a>
             </div>
-            
-        </div>
 
-        <div id="part2">
+            <img src="./imagens/YourWebsite.png" alt="Imagem do site sendo construido">           
+        </section>
 
-            <div id="texto3">
+        <section class="conteudo-secundario">
+            <h3 id="oQueE">O'que é uma landing page?</h3>
+
+            <div class="conteiner1">
+
+                <img class="resultados" src="./imagens/resultados.png" alt="">
+
+                <p>Landing Page é uma página que possui todos os elementos voltados à conversão 
+                do visitante em oportunidade ou cliente.</p>
+
+            </div>
+
+            <div class="conteiner2">
+
+                <p>Também conhecidas como páginas de conversão, são muito usadas em campanhas 
+                de Marketing Digital, pois tem altas taxas de conversão.</p> 
+
+                <img class="criando" src="./imagens/criando.png" alt="">
+
+            </div>
                 
-                <ul>
-                    <li>Hospegagem.</li>
-                    <li>Dominio por 1 ano.</li>
-                    <li>Encaixa em todos os tamanhos de tela.</li>
-                </ul>
-    
-            </div>
+        </section>
 
-            <img id="img2" src="./imagens/criando.png" alt="">
-
-        </div>
-
-        <a href="https://wa.me/554898592292" target="_blank"><div id="whatsapp"></div></a>
 
     </main>
 
-    <footer>
+    <footer id="forma-pagamento">
 
-        <div id="formaPagamento">Não perca tempo!
+        <ul>
+            <li>Hospedagem grais.</li>
+            <li>Dominio gratis por 1 ano</li>
+            <li>Pagina se ajusta a todos os tamanhos de tela</li>
+            <li>Pagamento em até 12X</li>
+        </ul>
 
-            Comtrate já e disfrute das vantagens de possuir uma Landing Page 
-            com um preço que cabe no seu bolso.
-        </div>
+        <a href="https://wa.me/554898592292" target="_blank"><button class="botao-rodape">Solicitar agora!</button></a>
         
-    </footer>
+        <img class="forma-pagamento" src="./imagens/formasPagamento.png" alt="Fomas de pagamento">
+
+    </footer> 
+
+    <a href="https://wa.me/554898592292" target="_blank"><img class="whatsapp" src="./imagens/whatsapp.png" alt=""></a>
 
 </body>
 </html>
