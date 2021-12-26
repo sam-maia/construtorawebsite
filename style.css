@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
 
+:root {
+    --cor1: white;
+    --cor2: rgb(22, 43, 122);
+    --cor3: rgba(255, 10, 10, 0.596);
+    --cor4: red;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -20,8 +27,9 @@ body {
 
 .logo {
     height: 80px;
-    background-color: white;
+    background-color: var(--cor1);
     border-radius: 50%;
+    filter: drop-shadow(5px -5px 20px #000000a1);
 }
 
 .menu {
@@ -30,14 +38,23 @@ body {
 }
 
 .menu-item {
-    color: white;
+    color: var(--cor1);
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
     font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    transition-duration: 0.4s;
+}
+
+.menu-item:hover {
+    background: #0004ff2a;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 main {
-    border-top: 0.1px solid white;
+    border-top: 0.1px solid var(--cor1);
     padding: 20px 0px;
 }
 
@@ -59,31 +76,34 @@ main {
     font-family: 'Righteous', cursive;
     font-weight: 400;
     font-size: 64px;
-    color: white;
+    color: var(--cor1);
 }
 
 .texto-principal h2{
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
     font-size: 24px;
-    color: white;
+    color: var(--cor1);
 }
 
 button {
-    background-color: rgb(191, 203, 255);
+    background-color: var(--cor3);
     width: 150px;
     height: 50px;
     border: none;
-    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
     font-size: 24px;
+    color: var(--cor1);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition-duration: 0.4s;
 }
 
 button:hover {
-    background-color: rgb(8, 8, 43);
-    color: white;
+    background-color: var(--cor4);
+    color: var(--cor1);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 .conteudo-principal img {
@@ -101,12 +121,12 @@ button:hover {
     width: 350px;
     margin: 50px auto;
     justify-content: center;
-    border-top: 0.1px solid white;
+    border-top: 0.1px solid var(--cor1);
     padding-top: 50px;
     font-family: 'Righteous', cursive;
     font-weight: 400;
     font-size: 24px;
-    color: white;
+    color: var(--cor1);
 }
 
 .conteiner1 {
@@ -125,7 +145,7 @@ button:hover {
     font-family: 'Sarala', sans-serif;
     font-weight: 300;
     font-size: 20px;
-    color: white;
+    color: var(--cor1);
 }
 
 .conteiner2 {
@@ -141,7 +161,7 @@ button:hover {
     font-family: 'Sarala', sans-serif;
     font-weight: 300;
     font-size: 20px;
-    color: white;
+    color: var(--cor1);
 }
 
 .criando{
@@ -153,7 +173,7 @@ footer {
     justify-content: space-around;
     padding: 32px 150px;
     align-items: center;
-    background-color: white;
+    background-color: var(--cor1);
 }
 
 ul{
@@ -163,7 +183,7 @@ ul{
 }
 
 .botao-rodape {
-    background-color: rgb(191, 203, 255);
+    background-color: var(--cor4);
     width: 180px;
     height: 50px;
     border: none;
@@ -179,4 +199,5 @@ ul{
     height: 60px;
     right: 90px;
     bottom: 60px;
+    filter: drop-shadow(5px 10px 10px #00000096);
 }
