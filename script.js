@@ -15,7 +15,7 @@ function scrollToOnClick (event) {
     event.preventDefault()
     const section = getScrollToByHref(event.path[0])
 
- smoothScrollTo(0, section, 1000);
+ smoothScrollTo(0, section, 800);
 }
 
 

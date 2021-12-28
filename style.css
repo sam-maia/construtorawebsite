@@ -20,13 +20,18 @@ body {
 
 .cabacalho {
     display: flex;
+    width: 90vw;
+    max-width: 1280px;
+    height: 15vw;
+    max-height: 100px;
     align-items: center;
     justify-content: space-around;
+    margin: auto;
     padding: 10px;
 }
 
 .logo {
-    height: 80px;
+    height: 90%;
     background-color: var(--cor1);
     border-radius: 50%;
     filter: drop-shadow(5px -5px 20px #000000a1);
@@ -34,14 +39,18 @@ body {
 
 .menu {
     display: flex;
-    gap: 32px;
+}
+
+input {
+    position: absolute;
+    top: -100%;
 }
 
 .menu-item {
     color: var(--cor1);
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: min(20px, 7vw);
     padding: 5px 10px;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
@@ -51,45 +60,69 @@ body {
 .menu-item:hover {
     background: #0004ff2a;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transform: scale(1.2);
+}
+
+label[for="checar"] {
+    width: 8vw;
+    height: 12vw;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.linha  {
+    width: 90%;
+    height: 4px;
+    background-color: white;
+    margin: 4px;
 }
 
 main {
     border-top: 0.1px solid var(--cor1);
-    padding: 20px 0px;
+    padding: 5vw 0;
+    max-width: 1280px;
+    margin: auto;
 }
 
 .conteudo-principal {
     display: flex;
+    max-width: 1280px;
+    width: 90%;
     justify-content: space-around;
-    margin: 25px 50px;
+    margin: auto;
 }
 
 .texto-principal {
     display: flex;
+    width: 50%;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap: 2vw;
+    overflow: hidden;
 }
 
 .texto-principal h1 {
-    width: 500px;
+    width: 100%;
     font-family: 'Righteous', cursive;
     font-weight: 400;
-    font-size: 64px;
+    font-size: min(64px, 6vw);
     color: var(--cor1);
 }
 
 .texto-principal h2{
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: min(20px, 5vw);
     color: var(--cor1);
 }
 
-button {
+.solicitar {
     background-color: var(--cor3);
     width: 150px;
     height: 50px;
+    margin: 1vw 0 3vw 0;
     border: none;
     border-radius: 20px;
     font-family: 'Sarala', sans-serif;
@@ -100,48 +133,57 @@ button {
     transition-duration: 0.4s;
 }
 
-button:hover {
+.solicitar:hover {
+    transform: scale(1.2);
     background-color: var(--cor4);
     color: var(--cor1);
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 .conteudo-principal img {
-    height: 350px;
-    margin-top: 50px;
+    max-height: 350px;
+    height: 25vw;
+    min-height: 150px;
+    margin-top: 4vw;
 }
 
 .conteudo-secundario {
     display: block;
-    margin: 80px 0px;
+    margin: 2vw 0px;
 }
 
 .conteudo-secundario h3 {
     display: flex;
-    width: 350px;
-    margin: 50px auto;
+    max-width: 400px;
+    width: 40vw;
+    margin: auto;
     justify-content: center;
     border-top: 0.1px solid var(--cor1);
-    padding-top: 50px;
+    padding: 5vw;
     font-family: 'Righteous', cursive;
     font-weight: 400;
-    font-size: 24px;
+    font-size: min(25px, 5vw);
     color: var(--cor1);
 }
 
 .conteiner1 {
     display: flex;
+    width: 90%;
     flex-direction: column 2;
     justify-content: space-around;
     align-items: center;
+    margin: auto;
 }
 
 .resultados {
-    width: 500px;
+    max-width: 550px;
+    width: 40vw;
+    min-width: 150px;
 }
 
 .conteiner1 p {
-    width: 500px;
+    max-width: 500px;
+    width: 30vw;
     font-family: 'Sarala', sans-serif;
     font-weight: 300;
     font-size: 20px;
@@ -150,14 +192,16 @@ button:hover {
 
 .conteiner2 {
     display: flex;
+    width: 90%;
+    margin: 5vw auto;
     flex-direction: column 2;
     justify-content: space-around;
     align-items: center;
-    margin-top: 50px;
 }
 
 .conteiner2 p {
-    width: 500px;
+    max-width: 450px;
+    width: 30vw;
     font-family: 'Sarala', sans-serif;
     font-weight: 300;
     font-size: 20px;
@@ -165,39 +209,136 @@ button:hover {
 }
 
 .criando{
-    width: 500px;
+    max-width: 650px;
+    width: 40vw;
 }
 
 footer {
     display: flex;
-    justify-content: space-around;
-    padding: 32px 150px;
-    align-items: center;
+    justify-content: center;
     background-color: var(--cor1);
 }
 
+.forma-pagamento {
+    display: flex;
+    max-width: 1280px;
+    width: 80vw;
+    justify-content: space-around;
+}
+
+.chamada2 {
+    margin: 3vw;
+}
+
 ul{
+    margin: 1vw;
     font-family: 'Sarala', sans-serif;
+    font-size: min(20px, 5vw);
     color: rgb(22, 43, 122);
     list-style-type: '\2714\00A0\00A0';
 }
 
 .botao-rodape {
     background-color: var(--cor4);
+    color: var(--cor1);
     width: 180px;
     height: 50px;
+    margin: 1vw;
     border: none;
     box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
     font-size: 24px;
+    transition-duration: 0.4s;
+}
+
+.botao-rodape:hover{
+    transform: scale(1.2);
+}
+
+.img-pagamento {
+    width: auto;
+    max-height: 300px;
+    height: 17vw;
+    margin: auto;
 }
 
 .whatsapp {
     position: fixed;
     height: 60px;
-    right: 90px;
+    right: 5vw;
     bottom: 60px;
     filter: drop-shadow(5px 10px 10px #00000096);
+    transition-duration: 0.4s;
+}
+
+.whatsapp:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 800px) {
+
+    label[for="checar"] {
+        display: flex;
+    }
+
+    .menu-itens {
+        display: none;
+    }
+
+    input#checar:checked ~ .menu-itens {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        top: 100px;
+        left: 250px;
+        background: var(--cor2);    
+    }
+
+    .conteudo-principal {
+        flex-direction: column;
+    }
+
+    .texto-principal {
+        margin: auto;
+        width: 75vw;
+    }
+
+    .conteudo-principal img {
+        margin: auto;
+    }
+
+    .conteudo-secundario h3 {
+        width: 80vw;
+    }
+
+    .conteiner1 {
+        flex-direction: column;
+    }
+
+    .resultados {
+        width: 75vw;
+    }
+
+    .conteiner1 p {
+        width: 75vw;
+        margin: 5vw 0;
+    }
+
+    .conteiner2 {
+        flex-direction: column;
+
+    }
+
+    .conteiner2 p {
+        width: 75vw;
+        margin: 5vw 0;
+    }
+
+    footer {
+        flex-direction: column;
+    }
 }
