@@ -1,24 +1,24 @@
 'use strict'
 
-const menuItens = document.querySelectorAll('.menu a[href^="#"]')
+const menuItens = document.querySelectorAll('#menu a[href^="#"]')
 
 menuItens.forEach(item => {
-    item.addEventListener('click', scrollToOnClick)
+  item.addEventListener('click', scrollToOnClick)
 })
 
 function getScrollToByHref(element) {
-    const id = element.getAttribute('href')
-    return document.querySelector(id).offsetTop
+  const id = element.getAttribute('href')
+  return document.querySelector(id).offsetTop
 }
     
 function scrollToOnClick (event) {
-    event.preventDefault()
-    const section = getScrollToByHref(event.path[0])
+  event.preventDefault()
+  const section = getScrollToByHref(event.path[0]) - 80
 
- smoothScrollTo(0, section, 800);
+ smoothScrollTo(0, section, 800)
+ abrirMenu()
+
 }
-
-
 
 
 /**
@@ -27,7 +27,7 @@ function scrollToOnClick (event) {
  * @param {int} endY: destination y coordinate
  * @param {int} duration: animation duration in ms
  */
-function smoothScrollTo(endX, endY, duration) {
+ function smoothScrollTo(endX, endY, duration) {
   const startX = window.scrollX || window.pageXOffset;
   const startY = window.scrollY || window.pageYOffset;
   const distanceX = endX - startX;
@@ -52,3 +52,15 @@ function smoothScrollTo(endX, endY, duration) {
     window.scroll(newX, newY);
   }, 1000 / 60); // 60 fps
 };
+
+// Menu hamburguer
+
+const btnMobile = document.getElementById('hamburguer')
+
+function abrirMenu () {
+  const menu = document.getElementById('menu')
+  menu.classList.toggle('active')
+}
+
+btnMobile.addEventListener('click', abrirMenu)
+
