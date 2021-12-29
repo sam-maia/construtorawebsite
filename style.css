@@ -62,19 +62,7 @@ body {
 }
 
 .hamburguer {
-    width: 8vw;
-    height: 12vw;
     display: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.linha  {
-    width: 90%;
-    height: 4px;
-    background-color: white;
-    margin: 4px;
 }
 
 main {
@@ -291,9 +279,38 @@ ul{
         flex-direction: column;
     }
 
-    .hamburguer {
-        display: flex;
+    #hamburguer {
+        display: block;
+        color: white;
         margin-left: 75%;
+        width: 8vw;
+        height: 2px;
+        border-top: 2px solid white;
+    }
+
+    #hamburguer::after, #hamburguer::before {
+        content: '';
+        display: block;
+        width: 8vw;
+        height: 2px;
+        background: currentColor;
+        margin-top: 8px;
+        transition-duration: 0.3s;
+        position: relative;
+    }
+
+    .active #hamburguer {
+        border-top-color: transparent;
+    }
+
+    .active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    .active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -9px;
+
     }
 
     .menu-itens {
